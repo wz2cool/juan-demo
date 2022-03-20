@@ -4,6 +4,7 @@
 2. 搭建 webpack
 3. 添加 typescript 解析
 4. 与 react 进行集成
+5. react-router 添加
 
 ## npm 常用命令
 
@@ -27,5 +28,12 @@ $ npm install typescript ts-loader -D
 ## react 集成
 
 ```
-$ npm install react react-dom -D
+$ npm install react react-dom
+$ npm install @types/react @types/react-dom -D
+```
+
+## react router
+
+```
+$ npm install react-router-dom
 ```
