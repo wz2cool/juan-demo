@@ -2,13 +2,17 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, "./src/index.js"),
+  entry: path.resolve(__dirname, "./src/index.ts"),
   module: {
     rules: [
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.tsx?$/,
+        loader: "ts-loader",
       },
     ],
   },

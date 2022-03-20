@@ -1,4 +1,6 @@
 setInterval(() => {
   const divTimer = document.getElementById("div_timer");
-  divTimer.innerHTML = new Date();
+  if (divTimer) {
+    divTimer.innerHTML = new Date().toString();
+  }
 }, 1000);
