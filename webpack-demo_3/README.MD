@@ -3,6 +3,7 @@
 1. 学习 npm 常用命令
 2. 搭建 webpack
 3. 添加 typescript 解析
+4. 与 react 进行集成
 
 ## npm 常用命令
 
@@ -18,7 +19,13 @@ $ npm install webpack -D
 ## typecript 解析
 
 添加 typescript 和 ts-loader 包
+
 ```
 $ npm install typescript ts-loader -D
 ```
 
+## react 集成
+
+```
+$ npm install react react-dom -D
+```
