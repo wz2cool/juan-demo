@@ -19,8 +19,16 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src", "index.html"),
+    }),
+  ],
   devServer: {
-    contentBase: path.resolve(__dirname, "./dist"),
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+    },
+    compress: true,
+    port: 8000,
   },
 };
