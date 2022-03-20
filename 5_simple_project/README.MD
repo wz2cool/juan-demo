@@ -5,6 +5,7 @@
 3. 添加 typescript 解析
 4. 与 react 进行集成
 5. react-router 添加
+6. 小项目和 antd 集成
 
 ## npm 常用命令
 
@@ -37,3 +38,5 @@ $ npm install @types/react @types/react-dom -D
 ```
 $ npm install react-router-dom
 ```
+
+## 小项目 和 antd 集成

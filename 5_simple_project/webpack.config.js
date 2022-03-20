@@ -14,6 +14,22 @@ module.exports = {
         test: /\.(js|ts|tsx)$/,
         loader: "ts-loader",
       },
+      {
+        test: /\.css$/,
+        loader: "style-loader",
+      },
+      {
+        test: /.*\.(gif|png|jp(e*)g|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 21000,
+              name: "images/[name]_[hash:7].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
